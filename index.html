@@ -64,10 +64,22 @@
             padding: 12px;
             font-size: 16px;
             cursor: pointer;
+            margin-bottom: 10px; /* Space between buttons */
         }
 
         .login-card button:hover {
             background-color: #3e5bd9;
+        }
+
+        .register-btn {
+            background-color: #f1f1f1;
+            color: var(--primary-color);
+            border: 1px solid var(--primary-color);
+        }
+
+        .register-btn:hover {
+            background-color: var(--primary-color);
+            color: #fff;
         }
 
         .forgot-password {
@@ -89,7 +101,7 @@
 
 <div class="container">
     <div class="login-card">
-        <h3>Welcome Back</h3>
+        <h3>Login</h3>
         <form>
             <div class="form-group">
                 <i class="fa fa-user"></i>
@@ -103,6 +115,9 @@
                 <button type="submit" class="btn btn-primary">Login</button>
             </div>
         </form>
+        <div class="form-group">
+            <button type="button" class="btn register-btn">Sign Up</button>
+        </div>
         <div class="forgot-password">
             <a href="#">Forgot Password?</a>
         </div>
